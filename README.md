@@ -8,3 +8,7 @@ O código fonte apresenta um exemplo de aplicação do princípio de *Segregaç�
 Para evitar interfaces grandes e genéricas, o código divide essas interfaces em categorias específicas para diferentes tipos de usuários: clientes e administradores. Cada uma dessas interfaces especializadas estende a interface geral e adiciona apenas os métodos relevantes ao papel específico do usuário. 
 
 Dessa forma, o princípio de Segregação de Interfaces é aplicado, garantindo que as classes implementem **apenas os métodos pertinentes a suas funcionalidades**, tornando o código mais modular, legível e adaptável às diferentes necessidades dos usuários.
+
+## Observações
+
+Esse repositório possui duas pastas principais de código fonte, um com a aplicação desenvolvida do modo incorreto, conforme o princípio de Segregação, enquanto a outra pasta possui uma versão adequada ao mesmo.
