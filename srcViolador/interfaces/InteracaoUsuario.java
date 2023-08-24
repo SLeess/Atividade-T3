@@ -17,6 +17,4 @@ public interface InteracaoUsuario {
     void adicionarProduto(Produto produto);
     void removerProduto(Produto produto);
     void processarPedido(int numeroPedido);
-    void adicionarNovoEstoque(Produto produto, int quantidade);
-    void atualizarEstoque(Produto produto, int quantidade);
 }

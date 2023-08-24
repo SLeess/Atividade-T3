@@ -1,9 +1,21 @@
-package users;
+package srcCorrigido.users;
 
-import interfaces.InteracaoUsuario;
-import model.Produto;
+import srcCorrigido.interfaces.ICliente;
+import srcCorrigido.model.Produto;
 
-public class Administrador implements InteracaoUsuario {
+public class Cliente implements ICliente {
+
+    @Override
+    public void avaliarProduto(Produto produto, int avaliacao) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void escreverAvaliacao(Produto produto, String avaliacao) {
+        // TODO Auto-generated method stub
+        
+    }
 
     @Override
     public void adicionarAoCarrinho(Produto produto) {
@@ -12,19 +24,7 @@ public class Administrador implements InteracaoUsuario {
     }
 
     @Override
-    public void adicionarProduto(Produto produto) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
     public void alterarSenha(String novaSenha) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void avaliarProduto(Produto produto, int avaliacao) {
         // TODO Auto-generated method stub
         
     }
@@ -42,25 +42,7 @@ public class Administrador implements InteracaoUsuario {
     }
 
     @Override
-    public void escreverAvaliacao(Produto produto, String avaliacao) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
     public void finalizarCompra() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void processarPedido(int numeroPedido) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void removerProduto(Produto produto) {
         // TODO Auto-generated method stub
         
     }
@@ -88,5 +70,7 @@ public class Administrador implements InteracaoUsuario {
         // TODO Auto-generated method stub
         
     }
-    // Implementações dos métodos para administradores...
+
+    
+    // Implementações dos métodos para clientes...
 }

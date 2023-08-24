@@ -1,6 +1,6 @@
 package srcCorrigido.interfaces;
 
-import model.*;
+import srcCorrigido.model.*;
 
 public interface InteracaoUsuario {
     void visualizarProdutos();
@@ -12,11 +12,4 @@ public interface InteracaoUsuario {
     void alterarSenha(String novaSenha);
     void visualizarPerfil();
     void editarPerfil(String novoNome, String novoEmail);
-    void escreverAvaliacao(Produto produto, String avaliacao);
-    void avaliarProduto(Produto produto, int avaliacao);
-    void adicionarProduto(Produto produto);
-    void removerProduto(Produto produto);
-    void processarPedido(int numeroPedido);
-    void adicionarNovoEstoque(Produto produto, int quantidade);
-    void atualizarEstoque(Produto produto, int quantidade);
 }

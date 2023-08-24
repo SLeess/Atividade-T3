@@ -12,12 +12,6 @@ public class Cliente implements InteracaoUsuario {
     }
 
     @Override
-    public void adicionarNovoEstoque(Produto produto, int quantidade) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
     public void adicionarProduto(Produto produto) {
         // TODO Auto-generated method stub
         
@@ -25,12 +19,6 @@ public class Cliente implements InteracaoUsuario {
 
     @Override
     public void alterarSenha(String novaSenha) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void atualizarEstoque(Produto produto, int quantidade) {
         // TODO Auto-generated method stub
         
     }

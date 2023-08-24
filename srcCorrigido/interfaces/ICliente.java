@@ -1,6 +1,6 @@
 package srcCorrigido.interfaces;
 
-import model.Produto;
+import srcCorrigido.model.Produto;
 
 public interface ICliente extends InteracaoUsuario {
     void escreverAvaliacao(Produto produto, String avaliacao);
