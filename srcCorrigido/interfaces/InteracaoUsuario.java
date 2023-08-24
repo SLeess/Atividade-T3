@@ -1,4 +1,4 @@
-package interfaces;
+package srcCorrigido.interfaces;
 
 import model.*;
 
