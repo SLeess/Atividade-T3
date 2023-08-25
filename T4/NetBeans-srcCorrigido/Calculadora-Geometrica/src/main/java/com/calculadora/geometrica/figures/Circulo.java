@@ -27,4 +27,9 @@ public class Circulo implements Ishape{
     public void setRaio(double raio) {
         this.raio = raio;
     }
+    
+    @Override
+    public String toString(){
+        return "Raio: " + this.getRaio();
+    }
 }

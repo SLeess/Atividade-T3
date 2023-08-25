@@ -51,16 +51,12 @@ public class Main {
                 System.out.print("\n\nFigura selecionada atualmente: ");
                 if(figure instanceof Quadrilatero){
                     System.out.println("Quadrilátero");
-                    System.out.println("Lado x: " + ((Quadrilatero) figure).getX() + "\nLado y: " + ((Quadrilatero) figure).getY());
                 } else if(figure instanceof Circulo){
                     System.out.println("Círculo");
-                    System.out.println("Raio: " + ((Circulo) figure).getRaio());
                 } else if(figure instanceof TrianguloRetangulo){
                     System.out.println("Triângulo Retângulo");
-                    System.out.println("Cateto 1: " + ((TrianguloRetangulo) figure).getC1() + 
-                            "\nCateto 2: " + ((TrianguloRetangulo) figure).getC2() + "\nHipotenusa: " + 
-                            ((TrianguloRetangulo) figure).getH());
                 }
+                System.out.print(figure.toString());
                 
                 System.out.println("\nO que deseja calcular da figura?");
                 System.out.println("[1] - Calcular área");
