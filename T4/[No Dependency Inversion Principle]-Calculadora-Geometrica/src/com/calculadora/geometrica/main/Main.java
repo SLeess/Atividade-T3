@@ -38,7 +38,7 @@ public class Main {
                     System.out.printf("Largura: ");
                     quadrilatero.setLargura(ler.nextDouble());
                     System.out.println("\nArea -> " + quadrilatero.getArea() + " u.a^2");
-                    System.out.println("Perimetro -> " + quadrilatero.getPerimetro() + " u.a^2");
+                    System.out.println("Perimetro -> " + quadrilatero.getPerimetro() + " u.a");
                 }
                 case 2 -> {
                     System.out.printf("\nComprimento: ");
@@ -46,14 +46,14 @@ public class Main {
                     System.out.printf("Largura: ");
                     trianguloRetangulo.setLargura(ler.nextDouble());
                     System.out.println("\nArea -> " + trianguloRetangulo.getArea() + " u.a^2");
-                    System.out.println("Perimetro -> " + trianguloRetangulo.getPerimetro() + " u.a^2");
+                    System.out.println("Perimetro -> " + trianguloRetangulo.getPerimetro() + " u");
                     System.out.println("Hipotenuza -> " + trianguloRetangulo.getHipotenuza()+ " u");
                 }
                 case 3 -> {
                     System.out.printf("\nRaio: ");
                     circulo.setRaio(ler.nextDouble());
                     System.out.println("\nArea -> " + circulo.getArea() + " u.a^2");
-                    System.out.println("Perimetro -> " + circulo.getPerimetro() + " u.a^2");
+                    System.out.println("Perimetro -> " + circulo.getPerimetro() + " u");
                 }
                 default -> {
                 }
