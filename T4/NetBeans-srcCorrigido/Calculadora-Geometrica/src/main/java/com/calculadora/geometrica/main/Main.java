@@ -3,7 +3,6 @@ package com.calculadora.geometrica.main;
 import com.calculadora.geometrica.figures.*;
 import com.calculadora.geometrica.interfaces.Ishape;
 import java.util.Scanner;
-//import com.calculadora.geometrica.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,16 +48,21 @@ public class Main {
             }
             
             else if(opt == 2){
-                System.out.print("\nFigura selecionada atualmente: ");
+                System.out.print("\n\nFigura selecionada atualmente: ");
                 if(figure instanceof Quadrilatero){
                     System.out.println("Quadrilátero");
+                    System.out.println("Lado x: " + ((Quadrilatero) figure).getX() + "\nLado y: " + ((Quadrilatero) figure).getY());
                 } else if(figure instanceof Circulo){
                     System.out.println("Círculo");
+                    System.out.println("Raio: " + ((Circulo) figure).getRaio());
                 } else if(figure instanceof TrianguloRetangulo){
                     System.out.println("Triângulo Retângulo");
+                    System.out.println("Cateto 1: " + ((TrianguloRetangulo) figure).getC1() + 
+                            "\nCateto 2: " + ((TrianguloRetangulo) figure).getC2() + "\nHipotenusa: " + 
+                            ((TrianguloRetangulo) figure).getH());
                 }
                 
-                System.out.println("\n\nO que deseja calcular da figura?");
+                System.out.println("\nO que deseja calcular da figura?");
                 System.out.println("[1] - Calcular área");
                 System.out.println("[2] - Calcular perímetro");
                 System.out.print("Opção: ");
