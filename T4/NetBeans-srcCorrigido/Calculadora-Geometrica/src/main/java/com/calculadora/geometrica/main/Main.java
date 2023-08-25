@@ -14,19 +14,15 @@ public class Main {
         do{
             
             System.out.println("Selecione uma das opções a seguir:");
-            System.out.println("[1] - Criar Figura");
-            System.out.println("[2] - Realizar operações geométricas");
-            System.out.println("[5] - Encerrrar");
+            System.out.println("[1] - Criar Figura\n[2] - Realizar operações geométricas\n[5] - Encerrrar");
             System.out.print("Opção: ");
             opt = ler.nextInt();
             
             if(opt == 1){
                 System.out.println("\nQual figura deseja criar:");
-                System.out.println("[1] - Quadrilátero");
-                System.out.println("[2] - Circulo");
-                System.out.println("[3] - Triângulo Retângulo");
+                System.out.println("[1] - Quadrilátero\n[2] - Circulo\n[3] - Triângulo Retângulo");
                 System.out.print("Opção: ");
-                //opt = 
+                
                 switch (ler.nextInt()) {
                     case 1:
                         System.out.print("Digite os valores de x e y do quadrilátero: ");
@@ -43,8 +39,7 @@ public class Main {
                     default:
                         break;
                 }
-                System.out.print("\n\n\n");
-                System.out.println("Figura Criada com sucesso");
+                System.out.println("\n\n\nFigura Criada com sucesso");
             }
             
             else if(opt == 2){
@@ -56,11 +51,8 @@ public class Main {
                 } else if(figure instanceof TrianguloRetangulo){
                     System.out.println("Triângulo Retângulo");
                 }
-                System.out.print(figure.toString());
-                
-                System.out.println("\nO que deseja calcular da figura?");
-                System.out.println("[1] - Calcular área");
-                System.out.println("[2] - Calcular perímetro");
+                System.out.println(figure.toString() + "\nO que deseja calcular da figura?");
+                System.out.println("[1] - Calcular área\n[2] - Calcular perímetro");
                 System.out.print("Opção: ");
                 switch (ler.nextInt()) {
                     case 1:
