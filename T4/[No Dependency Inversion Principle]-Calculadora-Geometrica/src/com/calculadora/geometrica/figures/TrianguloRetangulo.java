@@ -6,7 +6,7 @@ package com.calculadora.geometrica.figures;
 
 /**
  *
- * @author wende
+ * @author wendell
  */
 public class TrianguloRetangulo extends Shape{
     

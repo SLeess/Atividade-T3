@@ -3,12 +3,11 @@ package com.calculadora.geometrica.figures;
 import com.calculadora.geometrica.interfaces.Ishape;
 
 public class TrianguloRetangulo implements Ishape{
-    private double c1, c2, h;
+    private double c1, c2;
 
-    public TrianguloRetangulo(double c1, double c2, double h) {
+    public TrianguloRetangulo(double c1, double c2) {
         this.c1 = c1;
         this.c2 = c2;
-        this.h = h;
     }
 
     @Override
@@ -18,7 +17,7 @@ public class TrianguloRetangulo implements Ishape{
 
     @Override
     public Double getPerimetro() {
-        return c1+c2+h;
+        return c1+c2+getH();
     }
 
     public double getC1() {
@@ -38,11 +37,7 @@ public class TrianguloRetangulo implements Ishape{
     }
 
     public double getH() {
-        return h;
-    }
-
-    public void setH(double h) {
-        this.h = h;
+        return Math.sqrt(c1*c1 + c2*c2);
     }
 
     @Override

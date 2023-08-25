@@ -33,8 +33,8 @@ public class Main {
                         figure = new Circulo(ler.nextDouble());
                         break;
                     case 3:
-                        System.out.print("Digite o valor dos catetos e da hipotenusa: ");
-                        figure = new TrianguloRetangulo(ler.nextDouble(),ler.nextDouble(),ler.nextDouble());
+                        System.out.print("Digite o valor dos catetos: ");
+                        figure = new TrianguloRetangulo(ler.nextDouble(),ler.nextDouble());
                         break;
                     default:
                         break;
@@ -59,7 +59,7 @@ public class Main {
                         System.out.println("\n\n\nA àrea da figura equivale a: " + figure.getArea() + "ua²");
                         break;
                     case 2:
-                        System.out.println("\n\n\nO perímetro da figura equivale a: " + figure.getPerimetro() + "ua²");
+                        System.out.println("\n\n\nO perímetro da figura equivale a: " + figure.getPerimetro() + "u");
                         break;
                     default:
                         break;
