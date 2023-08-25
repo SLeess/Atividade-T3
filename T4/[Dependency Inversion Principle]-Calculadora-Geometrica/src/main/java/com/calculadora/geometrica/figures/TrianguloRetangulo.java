@@ -45,6 +45,9 @@ public class TrianguloRetangulo implements Ishape{
         this.h = h;
     }
 
-    
+    @Override
+    public String toString(){
+        return "Cateto 1: " + this.getC1() + "\nCateto 2: " + this.getC2() + "\nHipotenusa: " + this.getH();
+    }
     
 }
