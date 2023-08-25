@@ -1,6 +1,6 @@
 package com.calculadora.geometrica.main;
 
-import com.calculadora.geometrica.figures.Quadrilatero;
+import com.calculadora.geometrica.figures.*;
 import com.calculadora.geometrica.interfaces.Ishape;
 import java.util.Scanner;
 //import com.calculadora.geometrica.*;
@@ -28,9 +28,18 @@ public class Main {
                 System.out.println("[3] - Triângulo Retângulo");
                 System.out.print("Opção: ");
                 opt = ler.nextInt();
-                if(opt == 1)
+                if(opt == 1){
+                    System.out.print("Digite os valores de x e y do quadrilátero: ");
                     double x = ler.nextDouble();
-                    figure = new Quadrilatero();
+                    double y = ler.nextDouble();
+                    figure = new Quadrilatero(x,y);
+                }
+                else if(opt == 2){
+                    System.out.print("Digite o valor do raio do círculo: ");
+                    double r = ler.nextDouble();
+                    figure = new Circulo(r);
+                }
+                
             }
         }while(opt != 5);
 
