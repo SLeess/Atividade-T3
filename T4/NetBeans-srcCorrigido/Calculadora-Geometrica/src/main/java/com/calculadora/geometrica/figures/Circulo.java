@@ -1,6 +1,7 @@
 package com.calculadora.geometrica.figures;
 
 import com.calculadora.geometrica.interfaces.Ishape;
+import static java.lang.Math.PI;
 
 public class Circulo implements Ishape{
     private double raio;
@@ -11,12 +12,12 @@ public class Circulo implements Ishape{
 
     @Override
     public Double getArea() {
-        return 3.1415*raio*raio;
+        return PI*raio*raio;
     }
 
     @Override
     public Double getPerimetro() {
-        return 2*3.1415*raio;
+        return 2*PI*raio;
     }
 
     public double getRaio() {
