@@ -44,7 +44,7 @@ public class Main {
                     default:
                         break;
                 }
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.print("\n\n\n");
                 System.out.println("Figura Criada com sucesso");
             }
             
@@ -59,6 +59,19 @@ public class Main {
                 }
                 
                 System.out.println("\n\nO que deseja calcular da figura?");
+                System.out.println("[1] - Calcular área");
+                System.out.println("[2] - Calcular perímetro");
+                System.out.print("Opção: ");
+                switch (ler.nextInt()) {
+                    case 1:
+                        System.out.println("\n\n\nA àrea da figura equivale a: " + figure.getArea() + "ua²");
+                        break;
+                    case 2:
+                        System.out.println("\n\n\nO perímetro da figura equivale a: " + figure.getPerimetro() + "ua²");
+                        break;
+                    default:
+                        break;
+                }
             }
         }while(opt != 5);
 
