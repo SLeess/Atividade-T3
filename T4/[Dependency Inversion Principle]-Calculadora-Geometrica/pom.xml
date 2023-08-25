@@ -11,4 +11,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.calculadora.geometrica.CalculadoraGeometrica</exec.mainClass>
     </properties>
+    <name>[Dependency Inversion Principle]-Calculadora-Geometrica</name>
 </project>
