@@ -1,0 +1,5 @@
+com\calculadora\geometrica\main\Main.class
+com\calculadora\geometrica\figures\Circulo.class
+com\calculadora\geometrica\figures\Quadrilatero.class
+com\calculadora\geometrica\figures\TrianguloRetangulo.class
+com\calculadora\geometrica\interfaces\Ishape.class
